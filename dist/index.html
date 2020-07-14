@@ -3,293 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- font awesome -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <link rel="stylesheet" href="style.css"/>
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css">
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Article preview component</title>
 
   
 </head>
 <body>
-	<header class="bg-pale-blue">
-		<div class="container header-flex">
-			<div>
-				<h1 class="very-dark-blue-text">Social Media Dashboard</h1>
-				<p class="small-para dark-grayish-blue-text">Total Followers: 23,004</p>
+	<main>
+		<div class="flex">
+			<div class="left">
+				<img src="images/drawers.jpg" alt="drawer">
 			</div>
 			
-			<div class="toggle-area flex">
-				<p class="small-para dark-grayish-blue-text">
-					Dark Mode
-				</p>
-				
-				<div class="toggle-btn-area">
-					<label for="toggle">
-						<span class="toggle-btn">
-							<span class="ball bg-pale-blue"></span>
-						</span>
-						<input type="checkbox" id="toggle" unchecked/>
-					</label>
-				</div>
+			<div class="right">
+				  <h3>
+					  Shift the overall look and feel by adding these wonderful 
+					  touches to furniture in your home
+					  
+				   </h3>
+
+				  <p>
+					  Ever been in a room and felt like something was missing? <br>Perhaps 
+					  it felt slightly bare and uninviting. I’ve got some simple tips 
+					  to help you make any room feel complete.
+					  
+				  </p>
+
+				  <div class="flex over-write">
+					  <img class="avatar" src="images/avatar-michelle.jpg" alt="avatar">
+					  
+					  <div>
+						<h4>Michelle Appleton</h4>
+						
+							<span class="date">28 Jun 2020</span>
+						
+					  </div>
+
+					  <div class="share">
+						<i class="fa fa-share" aria-hidden="true"></i>
+					  </div>
+				  </div>
 			</div>
 		</div>
-	</header>
-	
-	<section class="displaced">
-		<div class="container">
-			<div class="card-flex">
-				<div class="big-card card-bg">
-					<div>
-						<div class="flex">
-							<img src="images/icon-facebook.svg" alt="facebook-icon"/>
-							<span class="small user-handle">@nathanf</span>
-						</div>
-						<h2 class="very-dark-blue-text">1987</h2>
-						<p class="dark-grayish-blue-text">FOLLOWERS</p>
-						<div class="flex">
-							<img src="images/icon-up.svg" alt="up-icon"/>
-							<span class="small green-text">12&nbsp; Today</span>
-						</div>
-						
-						
-					</div>
-				</div>
-				
-				<div class="big-card card-bg">
-					<div>
-						<div class="flex">
-							<img src="images/icon-twitter.svg" alt="twitter-icon"/>
-							<span class="small user-handle">@nathanf</span>
-						</div>
-						<h2 class="very-dark-blue-text">1044</h2>
-						<p class="dark-grayish-blue-text">FOLLOWERS</p>
-						<div class="flex">
-							<img src="images/icon-up.svg" alt="up-icon"/>
-							<span class="small green-text">99&nbsp; Today</span>
-						</div>
-						
-						
-					</div>
-				</div>
-				
-				<div class="big-card card-bg">
-					<span class="top-line"></span>
-					<div>
-						<div class="flex">
-							<img src="images/icon-instagram.svg" alt="instagram-icon"/>
-							<span class="small user-handle">@realnathanf</span>
-						</div>
-						<h2 class="very-dark-blue-text">11k</h2>
-						<p class="dark-grayish-blue-text">FOLLOWERS</p>
-						<div class="flex">
-							<img src="images/icon-up.svg" alt="up-icon"/>
-							<span class="small green-text">1099&nbsp; Today</span>
-						</div>
-						
-						
-					</div>
-				</div>
-				
-				<div class="big-card card-bg">
-					<div>
-						<div class="flex">
-							<img src="images/icon-youtube.svg" alt="youtube-icon"/>
-							<span class="small user-handle">@Nathan F.</span>
-						</div>
-						<h2 class="very-dark-blue-text">8239</h2>
-						<p class="dark-grayish-blue-text">SUBSCRIBERS</p>
-						<div class="flex">
-							<img src="images/icon-down.svg" alt="down-icon"/>
-							<span class="small red-text">144&nbsp; Today</span>
-						</div>
-						
-						
-					</div>
-				</div>
-			</div>
-		</div><!-- end container-->
-	</section>
-	
-	<section class="overview">
-		<div class="container">
-			<h3>Overview - Today</h3>
-			<div class="flex">
-				<div class="small-card card-bg">
-					<div class="sm-card-flex">
-						<p>Page Views</p>
-						<div><img src="images/icon-facebook.svg" alt="facebook-icon"/></div>
-					</div>
-					
-					<div class="sm-card-flex">
-						<h3 class="very-dark-blue-text">87</h3>
-						<div class="flex">
-							<img src="images/icon-up.svg" alt="up-icon"/>
-							<span class="small green-text">3%</span>
-						</div>
-					</div>
-					
-				</div>
-				
-				<div class="small-card card-bg">
-					<div class="sm-card-flex">
-						<p>Likes</p>
-						<div><img src="images/icon-facebook.svg" alt="facebook-icon"/></div>
-					</div>
-					
-					<div class="sm-card-flex">
-						<h3 class="very-dark-blue-text">52</h3>
-						<div class="flex">
-							<img src="images/icon-down.svg" alt="up-icon"/>
-							<span class="small red-text">2%</span>
-						</div>
-					</div>
-				</div>
-				
-				<div class="small-card card-bg">
-					<div class="sm-card-flex">
-						<p>Likes</p>
-						<div><img src="images/icon-instagram.svg" alt="instagram-icon"/></div>
-					</div>
-					
-					<div class="sm-card-flex">
-						<h3 class="very-dark-blue-text">5462</h3>
-						<div class="flex">
-							<img src="images/icon-up.svg" alt="up-icon"/>
-							<span class="small green-text">2257%</span>
-						</div>
-					</div>
-				</div>
-				
-				<div class="small-card card-bg">
-					<div class="sm-card-flex">
-						<p>Profile Views</p>
-						<div><img src="images/icon-instagram.svg" alt="instagram-icon"/></div>
-					</div>
-					
-					<div class="sm-card-flex">
-						<h3 class="very-dark-blue-text">52k</h3>
-						<div class="flex">
-							<img src="images/icon-up.svg" alt="up-icon"/>
-							<span class="small green-text">1375%</span>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-			
-			<!-- Give a margin bottom before next row-->
-			<div class="margin-btm">
-			</div>
-			
-			<!-- Start of second small cards row -->
-			<div class="flex">
-				<div class="small-card card-bg">
-					<div class="sm-card-flex">
-						<p>Retweets</p>
-						<div><img src="images/icon-twitter.svg" alt="twitter-icon"/></div>
-					</div>
-					
-					<div class="sm-card-flex">
-						<h3 class="very-dark-blue-text">117</h3>
-						<div class="flex">
-							<img src="images/icon-up.svg" alt="up-icon"/>
-							<span class="small green-text">3%</span>
-						</div>
-					</div>
-					
-				</div>
-				
-				<div class="small-card card-bg">
-					<div class="sm-card-flex">
-						<p>Likes</p>
-						<div><img src="images/icon-twitter.svg" alt="twitter-icon"/></div>
-					</div>
-					
-					<div class="sm-card-flex">
-						<h3 class="very-dark-blue-text">507</h3>
-						<div class="flex">
-							<img src="images/icon-down.svg" alt="up-icon"/>
-							<span class="small red-text">553%</span>
-						</div>
-					</div>
-				</div>
-				
-				<div class="small-card card-bg">
-					<div class="sm-card-flex">
-						<p>Likes</p>
-						<div><img src="images/icon-youtube.svg" alt="youtube-icon"/></div>
-					</div>
-					
-					<div class="sm-card-flex">
-						<h3 class="very-dark-blue-text">107</h3>
-						<div class="flex">
-							<img src="images/icon-down.svg" alt="up-icon"/>
-							<span class="small red-text">19%</span>
-						</div>
-					</div>
-				</div>
-				
-				<div class="small-card card-bg">
-					<div class="sm-card-flex">
-						<p>Total Views</p>
-						<div><img src="images/icon-youtube.svg" alt="youtube-icon"/></div>
-					</div>
-					
-					<div class="sm-card-flex">
-						<h3 class="very-dark-blue-text">1407</h3>
-						<div class="flex">
-							<img src="images/icon-down.svg" alt="up-icon"/>
-							<span class="small red-text">12%</span>
-						</div>
-					</div>
-				</div>
-				
-				
-			</div> <!-- end of small cards row -->
-		</div>
 		
-		<center id="owner">
-			<marquee><small class="owner">This template was made by <strong><a href="https://www.upwork.com/fl/collinsanele">Collins Anele</a></strong> </small></marquee>
-		</center>
-		<br>
-	</section>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<script>
-		const chbox = document.getElementById("toggle");
-		const ball = document.querySelector(".ball");
-		
-		chbox.addEventListener("click", ()=>{
-			if (chbox.checked== true){
-				ball.style.position = "absolute";
-				ball.style.right = "60%";
-				
-				//Change body background color
-				document.body.classList.toggle("dark-mode");
-				
-			}
-			
-			else{
-				ball.style.position = "absolute";
-				ball.style.right = "0%";
-				
-				//Change body background color
-				document.body.classList.remove("dark-mode");
-			}
-		});
-		
-		
-	</script>
+	</main>
+
+  
+ 
 </body>
 </html>
-
